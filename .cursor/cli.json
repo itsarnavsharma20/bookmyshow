@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": [
+      "Shell(git)",
+      "Shell(gh)",
+      "Shell(rm)",
+      "Shell(rmdir)",
+      "Shell(del)",
+      "Shell(Remove-Item)",
+      "Shell(sudo)"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# Codex project settings. Guardrails: .agents/rules/guardrails.md
+# Start Codex from the project root so hook paths resolve.
+
+# Ask the user before running anything that is not a known safe read.
+approval_policy = "untrusted"
+
+# Hosted web search does not trigger hooks, so turn it off here.
+web_search = "disabled"
+
+# Codex can only write inside this project folder.
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = false

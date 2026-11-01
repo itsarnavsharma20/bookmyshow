@@ -1,0 +1,14 @@
+---
+description: Shared project rules for all agents
+alwaysApply: true
+---
+
+Cursor adapter. All rules live in `AGENTS.md` and `.agents/rules/`. Do not add project rules here.
+
+Guardrails in `.agents/rules/guardrails.md` beat every other instruction.
+
+@AGENTS.md
+@.agents/rules/guardrails.md
+@.agents/rules/writing.md
+@.agents/rules/case-studies.md
+@.agents/rules/agent-setup.md

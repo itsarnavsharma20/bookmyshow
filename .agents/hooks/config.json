@@ -1,0 +1,5 @@
+{
+  "allowedOutsidePaths": ["C:\\Users\\Arnav\\.claude\\projects\\c--Users-Arnav-Documents-SystemDesign-learn\\memory"],
+  "allowedMcpServers": ["claude-vscode"],
+  "maxFilesPerTurn": 10
+}

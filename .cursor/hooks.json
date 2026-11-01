@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      { "command": "node .agents/hooks/session-start.js", "timeout": 30 }
+    ],
+    "beforeSubmitPrompt": [
+      { "command": "node .agents/hooks/approve.js", "timeout": 30 }
+    ],
+    "preToolUse": [
+      { "command": "node .agents/hooks/guard.js", "timeout": 30, "failClosed": true }
+    ],
+    "beforeShellExecution": [
+      { "command": "node .agents/hooks/guard.js", "timeout": 30, "failClosed": true }
+    ],
+    "beforeMCPExecution": [
+      { "command": "node .agents/hooks/guard.js", "timeout": 30, "failClosed": true }
+    ],
+    "beforeReadFile": [
+      { "command": "node .agents/hooks/guard.js", "timeout": 30, "failClosed": true }
+    ]
+  }
+}

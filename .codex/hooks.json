@@ -1,0 +1,41 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .agents/hooks/session-start.js",
+            "statusMessage": "Loading guardrails",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .agents/hooks/approve.js",
+            "statusMessage": "Checking approval",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .agents/hooks/guard.js",
+            "statusMessage": "Checking guardrails",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

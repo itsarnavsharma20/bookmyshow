@@ -1,0 +1,17 @@
+# Local guardrail state. Never commit these.
+.agents/UNLOCK
+.agents/NET_UNLOCK
+.agents/state/
+.agents/logs/
+
+# App build output, dependencies, and runtime logs
+node_modules/
+dist/
+logs/
+
+# Local tool settings and secrets
+.claude/settings.local.json
+.env
+.env.*
+!.env.example
+!.env.sample
